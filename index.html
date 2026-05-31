@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>TechStore</title>
+</head>
+<body>
+    <header>
+        <h1 id="store-name">TechStore</h1>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div>
+            <h1>TechStore</h1>
+            <p>Discover the latest gadgets and accessories
+                at the best prices. Quality you can trust!</p>
+                <button id="btn-shop" onclick="location.href='#products'">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products">
+        <h1 id="section-title">Our Products</h1>
+        <div id="cards">
+            <div class="card">
+                <img src="photo/Headphones.png" alt="Wireless Headphones">
+                <h3 class="product-name">Wireless Headphones</h3>
+                <p class="product-desc">High quality sound with 
+                    noise cancellation.</p>
+                <p class="price">$59.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Smart-Watch.png" alt="Smart Watch">
+                <h3 class="product-name">Smart Watch</h3>
+                <p class="product-desc">Track your fitness and stay 
+                    connected on the go.</p>
+                <p class="price">$49.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Earbuds.png" alt="Bluetooth Earbuds">
+                <h3 class="product-name">Bluetooth Earbuds</h3>
+                <p class="product-desc">Compact design with
+                    powerful bass.</p>
+                <p class="price">$29.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Power-Bank.png" alt="Power Bank">
+                <h3 class="product-name">Power Bank 10000mAh</h3>
+                <p class="product-desc">Charge your devices
+                    anytime, anywhere.</p>
+                <p class="price">$19.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Backpack.jpg" alt="Laptop Backpack">
+                <h3 class="product-name">Laptop Backpack</h3>
+                <p class="product-desc">Water resistant with
+                    multiple compartments.</p>
+                <p class="price">$39.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+            <div class="card">
+                <img src="photo/Keyboard.jpg" alt="Mechanical Keyboard">
+                <h3 class="product-name">Mechanical Keyboard</h3>
+                <p class="product-desc">Smooth typing experience
+                    with RGB lighting.</p>
+                <p class="price">$69.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Light-Bar.jpg" alt="LED Desk Light">
+                <h3 class="product-name">LED Desk Light</h3>
+                <p class="product-desc">Soft eye-friendly lighting
+                    for work and study.</p>
+                <p class="price">$39.99</p>
+                <button  class="btn-card" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Microphone.jpg" alt="USB Microphone">
+                <h3 class="product-name">USB Microphone</h3>
+                <p class="product-desc">Crystal clear audio for 
+                    streaming and recording.</p>
+                <p class="price">$44.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/USB-hub.jpg" alt="USB hub">
+                <h3 class="product-name">USB hub</h3>
+                <p class="product-desc">Expand connectivity with 
+                    multiple USB ports.</p>
+                <p class="price">$24.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/VR-Headset.jpg" alt="VR Headset">
+                <h3 class="product-name">VR Headset</h3>
+                <p class="product-desc">Immersive virtual reality 
+                    experience.</p>
+                <p class="price">$199.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Headphones.png" alt="Wireless Headphones">
+                <h3 class="product-name">Wireless Headphones</h3>
+                <p class="product-desc">High quality sound with 
+                    noise cancellation.</p>
+                <p class="price">$59.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Potable-Monitor.jpg" alt="Portable Monitor">
+                <h3 class="product-name">Portable Monitor</h3>
+                <p class="product-desc">Ultra-slim second screen 
+                    for productivity.</p>
+                <p class="price">$129.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="photo/Stream-Deck.jpg" alt="Stream Deck">
+                <h3 class="product-name">Stream Deck</h3>
+                <p class="product-desc">Custom shortcuts for 
+                    creators and streamers.</p>
+                <p class="price">$149.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+            <div class="card">
+                <img src="photo/Laptop-Stand.jpg" alt="Laptop Stand">
+                <h3 class="product-name">Laptop Stand</h3>
+                <p class="product-desc">Ergonomic adjustable stand for laptops.</p>
+                <p class="price">$34.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+            <div class="card">
+                <img src="photo/Tablet.jpg" alt="Tablet">
+                <h3 class="product-name">Tablet</h3>
+                <p class="product-desc">Portable entertainment and productivity device.</p>
+                <p class="price">$249.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+            
+            <div class="card">
+                <img src="photo/Smart-Ring.jpg" alt="Smart Ring">
+                <h3 class="product-name">Smart Ring</h3>
+                <p class="product-desc">Track health and activity in a compact design.</p>
+                <p class="price">$299.99</p>
+                <button class="btn-card" onclick="addToCart(this)">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div id="footer-content">
+            <div class="footer-part">
+                <h3>TechStore</h3>
+                <p>Your one-stop shop for the
+                    latest tech products and
+                    accessories.</p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <div class="footer-part">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-part">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="http://">Shipping & Delivery</a></li>
+                    <li><a href="http://">Returns & Refunds</a></li>
+                    <li><a href="http://">FAQS</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-part">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:support@techstore.com">support@techstore.com</a></li>
+                    <li>Phone: <a href="tel:+123 456 7890">+123 456 7890</a></li>
+                    <li>Address: 123 Tech Street,Digital City, Country</li>
+                </ul>
+            </div>
+        </div>
+
+        <p id="Copyright"><i class="fa-regular fa-copyright"></i>2025 TechStore. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>
