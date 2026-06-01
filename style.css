@@ -4,6 +4,10 @@ body {
     background-color: #f8f8f8;
     font-family: 'Inter', sans-serif;
 }
+body::selection {
+    background-color: black;
+    color: white;
+}
 
     /*header section*/
 header {
@@ -125,13 +129,18 @@ header a:hover {
     /* home section */
 #home {
     background-image: url('photo/Background.png');
-    min-height: 80vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
 }
+#home::selection {
+    background-color: #00000000;
+    color: #000000b1;
+}
+
 #home h1 {
     color: #fff;
     font-size: clamp(40px, 8vw, 70px);
@@ -227,6 +236,10 @@ header a:hover {
     color: white;
     margin-top: 50px;
 }
+#contact::selection {
+    background-color: #00000000;
+    color: #9c9c9c;
+}
 #contact #footer-content {
     display: flex;
     justify-content:center;
@@ -282,6 +295,9 @@ header a:hover {
     header button {
         margin-right: 10px;
     }
+    nav {
+        margin-right: 4%;
+    }
 
     nav .text {
         display: none;  /*hide the text*/
@@ -299,10 +315,10 @@ header a:hover {
     #cart-section {
         position: fixed;
         top: 85px;
-        left: 5%;
+        left: 8%;
 
-        width: 90%;
-        height: 85%;
+        width: 84%;
+        height: 75%;
     }
 
     /* Home */
@@ -320,7 +336,7 @@ header a:hover {
     #home p {
         width: 90%;
         margin: 15px auto;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #home #btn-shop {
