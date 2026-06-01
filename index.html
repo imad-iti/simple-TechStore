@@ -14,7 +14,7 @@
 
         <nav>
             <button id="cart-icon" onclick="accessCart()">
-                <i class="fa-solid fa-cart-shopping"> <sub id="icon-nb-items">1</sub></i>
+                <i class="fa-solid fa-cart-shopping"> <sub id="icon-nb-items">0</sub></i>
                 <span class="text">Cart</span>
             </button>
 
@@ -35,22 +35,13 @@
 
     <section id="cart-section" class="hide">
         <h3>Cart Summary</h3>
-        <p class="nb-items">Items : 0</p>
+        <p id="nb-items">Items : 0</p>
 
+        <div id="cart-items">
+            <!--   new paragraphes   -->
+        </div>
 
-            <!-- test -->
-
-            
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-        <p class="">Wireless Headphones = $59.99</p>
-
-        <p id="total-price">Total price : $59.99</p>
+        <p id="total-price">Total price : $0</p>
 
         <div id="cart-btn">
             <button id="clear-cart" onclick="clearCart()">Clear Cart</button>

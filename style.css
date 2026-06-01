@@ -78,6 +78,13 @@ header a:hover {
     font-size: 30px;
     font-weight: 800;
 }
+#cart-section #nb-item {
+    font-size: 25px;
+}
+#cart-section #cart-items {
+    max-height: 350px;
+    overflow-y: auto;
+}
 #cart-section p {
     font-size: 20px;
     font-weight: 700;
@@ -372,6 +379,9 @@ header a:hover {
 
         width: 50%;
         height: 85%;
+    }
+    #cart-section #cart-items {
+        max-height: 650px;
     }
 
 
